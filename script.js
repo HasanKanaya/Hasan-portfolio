@@ -26,6 +26,22 @@ var swiper = new Swiper(".mySwiper", {
 });
 // My works
 
+// Cer
+
+let changeImg = document.querySelectorAll(".certifications .mySwiper img");
+let bigImg = document.querySelector(".certifications .bigImg");
+changeImg.forEach((e) => {
+  e.addEventListener("click", () => {
+    if (bigImg.getAttribute("src") != e.getAttribute("src")) {
+      $(".bigImg").fadeOut("normal", function () {
+        bigImg.setAttribute("src", e.getAttribute("src"));
+      });
+      $(".bigImg").fadeIn("fast");
+    }
+  });
+});
+
+// Cer
 // Footer
 let goUpButton = document.querySelector(".goUp");
 
