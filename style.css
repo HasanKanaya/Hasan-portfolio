@@ -144,17 +144,20 @@ footer .container .goUp:hover {
   #my-works .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
 }
 
 @media (max-width: 600px) {
+  .works {
+    height: 90vh;
+  }
   #my-works .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 210px;
-    height: 210px;
+    width: 260px;
+    height: 260px;
   }
 }
 
