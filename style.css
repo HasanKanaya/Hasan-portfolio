@@ -153,7 +153,7 @@ footer .container .goUp:hover {
 
 @media (max-width: 768px) {
   .works {
-    height: 70vh;
+    height: 85vh;
   }
   #my-works .swiper-slide {
     background-position: center;
@@ -165,7 +165,7 @@ footer .container .goUp:hover {
 
 @media (max-width: 600px) {
   .works {
-    height: 70vh;
+    height: 85vh;
   }
   #my-works .swiper-slide {
     background-position: center;
