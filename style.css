@@ -107,7 +107,11 @@ nav .logo {
 }
 
 .skills {
-  height: 40vh;
+  height: 100vh;
+}
+
+.skills .skillsImg {
+  width: 25px;
 }
 
 .works {
