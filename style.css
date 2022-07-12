@@ -18,15 +18,17 @@ nav .logo {
 
 .swiper {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-bottom: 170px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
+  border: 2px solid #eee;
+  border-radius: 5px;
 }
 
 .swiper-slide img {
@@ -153,6 +155,18 @@ footer .container .goUp {
 
 footer .container .goUp:hover {
   opacity: 1;
+}
+
+@media (max-width: 1400px) {
+  .works {
+    height: 110vh;
+  }
+  #my-works .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+  }
 }
 
 @media (max-width: 768px) {
