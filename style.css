@@ -19,14 +19,14 @@ nav .logo {
 .swiper {
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 170px;
+  padding-bottom: 200px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   border: 2px solid #eee;
   border-radius: 5px;
 }
@@ -120,24 +120,46 @@ nav .logo {
   height: 100vh;
 }
 
-.certifications .swiper {
-  width: 200px;
-  padding-top: 20px;
-  padding-bottom: 120px;
-  overflow: hidden;
+.certifications .wrapper nav {
+  display: flex;
+  justify-content: center;
 }
 
-.certifications .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 150px;
-  height: 120px;
-}
-
-.certifications .swiper-slide img {
-  display: block;
+.certifications .wrapper nav .items {
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.certifications .wrapper nav .items .item {
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500px;
+  color: crimson;
+  border: 2px solid crimson;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.certifications .wrapper nav .items .item:hover, .certifications .wrapper nav .items .item.active {
+  color: #fff;
+  background-color: crimson;
+}
+
+.certifications .wrapper .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  height: 500px;
+}
+
+.certifications .wrapper .gallery .image {
+  width: 100%;
+}
+
+.certifications .wrapper .gallery .image img {
+  width: 100%;
 }
 
 footer .container p.lead {
@@ -161,6 +183,9 @@ footer .container .goUp:hover {
   .works {
     height: 110vh;
   }
+  #my-works .swiper {
+    padding-bottom: 170px;
+  }
   #my-works .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -173,11 +198,30 @@ footer .container .goUp:hover {
   .works {
     height: 85vh;
   }
+  #my-works .swiper {
+    padding-bottom: 170px;
+  }
   #my-works .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 280px;
     height: 280px;
+  }
+  .certifications .wrapper nav .items .item {
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+  .certifications .wrapper .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    width: 100%;
+    height: 500px;
+  }
+  .certifications .wrapper .gallery .image {
+    width: 100%;
+  }
+  .certifications .wrapper .gallery .image img {
+    width: 100%;
   }
 }
 
