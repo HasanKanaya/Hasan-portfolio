@@ -8,9 +8,17 @@ var typed = new Typed(".typing", {
 // About Section
 let language = "En";
 let xAr = "هذه هي قصتي";
-let xEn = "Here are my story";
-let yAr = "عندما بدأت تعلم البرمجة بدأت بتعلم لغة";
-let yEn = "When I started learn coding I started with C++";
+let xEn = "This is my story";
+let yAr = `بدأت بتعلم البرمجة عندما كان عمري 16 سنة تعلمت لغة سي بلاس بلاس بالإضافة الى مبادئ الخوازميات
+ثم قررت بناء تطبيقات الموبايل لذلك تعلمت لغة الجافا والكوتلن وقمت ببناء تطبيقين الأول لحساب العمر والثاني ليعرض الوقت 
+بعد ذلك قررت تصميم لعبة فتعلمت لغة سي شارب وقمت بتصميم لعبة بسيطة مثل لعبة الأفعى`;
+let yEn = `I started learning programming when I was 16 years old. I learned C++ language as well as the Logical thinking and algorithms
+Then I decided to build mobile applications, so I learned Java and Kotlin and built two applications, the first was to calculate the age and the second to display the time
+After that, I decided to design a game, so I learned C# and build a simple game like the a snake game`;
+let zAr = `وعندما بدأت بمجال تصميم المواقع لاحظت انه من أروع المجالات بالعالم لأنه يمكنك بناء اي شيء تريده
+ومنذ ذلك الوقت خصصت وقتي وجهدي لأصبح من أفضل مطوري المواقع في العالم`;
+let zEn = `And when I started into the web Development, I noticed that it is one of the most wonderful careers in the world because you can build anything you want
+Since then, I have dedicated my time and effort to become one of the best web developers in the world`;
 let allText = document.querySelectorAll(".aboutTextAr");
 
 allText.forEach((e) => {
@@ -19,10 +27,16 @@ allText.forEach((e) => {
       language = "Ar";
       allText[0].innerHTML = xAr;
       allText[1].innerHTML = yAr;
+      allText[2].innerHTML = zAr;
+      document.querySelector(".allText").style.cssText =
+        "color: lightpink; line-height: 2;";
     } else {
       language = "En";
       allText[0].innerHTML = xEn;
       allText[1].innerHTML = yEn;
+      allText[2].innerHTML = zEn;
+      document.querySelector(".allText").style.cssText =
+        "color: white; line-height: 1.6;";
     }
     allText.forEach((e) => {
       e.classList.toggle("turnToAr");
