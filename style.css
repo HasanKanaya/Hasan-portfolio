@@ -108,6 +108,15 @@ nav .logo {
   color: crimson;
 }
 
+.about .container .aboutTextAr {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.about .container .turnToAr {
+  text-align: right;
+}
+
 .skills {
   height: 100vh;
 }

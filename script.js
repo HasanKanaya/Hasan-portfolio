@@ -5,6 +5,33 @@ var typed = new Typed(".typing", {
   loop: true,
 });
 
+// About Section
+let language = "En";
+let xAr = "هذه هي قصتي";
+let xEn = "Here are my story";
+let yAr = "عندما بدأت تعلم البرمجة بدأت بتعلم لغة";
+let yEn = "When I started learn coding I started with C++";
+let allText = document.querySelectorAll(".aboutTextAr");
+
+allText.forEach((e) => {
+  e.addEventListener("click", () => {
+    if (language == "En") {
+      language = "Ar";
+      allText[0].innerHTML = xAr;
+      allText[1].innerHTML = yAr;
+    } else {
+      language = "En";
+      allText[0].innerHTML = xEn;
+      allText[1].innerHTML = yEn;
+    }
+    allText.forEach((e) => {
+      e.classList.toggle("turnToAr");
+    });
+  });
+});
+
+// About Section
+
 // My works
 let section = document.querySelector("section#my-works");
 
