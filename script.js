@@ -29,7 +29,7 @@ allText.forEach((e) => {
       allText[1].innerHTML = yAr;
       allText[2].innerHTML = zAr;
       document.querySelector(".allText").style.cssText =
-        "color: lightpink; line-height: 2;";
+        "color: #8abee0; line-height: 2;";
     } else {
       language = "En";
       allText[0].innerHTML = xEn;
@@ -43,7 +43,6 @@ allText.forEach((e) => {
     });
   });
 });
-
 // About Section
 
 // My works
@@ -86,30 +85,15 @@ let images = document.querySelectorAll(".gallery .image img");
 $(".bigImg").fadeOut("fast");
 images.forEach((ele) => {
   ele.addEventListener("click", () => {
-    // $(".bigImg").css("display", "block");
-    // $(".bigImg").animate({
-    //   opacity: 1,
-    //   width: 400,
-    //   height: 300,
-    //   left: 20,
-    // });
     $(".bigImg img").attr("src", ele.getAttribute("src"));
     $(".bigImg").fadeIn("normal");
     $(".bigImg .closeButton").on("click", function () {
-      // $(".bigImg").animate(
-      //   {
-      //     opacity: 1,
-      //     left: -300,
-      //   },
-      //   function () {
-      //     $(".bigImg").fadeOut("normal");
-      //   }
-      // );
       $(".bigImg").fadeOut("normal");
     });
   });
 });
 // Cer
+
 // Footer
 let goUpButton = document.querySelector(".goUp");
 
