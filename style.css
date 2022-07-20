@@ -144,6 +144,7 @@ nav .logo {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .certifications .wrapper nav .items .item {
@@ -177,6 +178,15 @@ nav .logo {
   width: 100%;
 }
 
+.certifications .wrapper .gallery .image.show {
+  display: block;
+  animation: animate 0.4s ease;
+}
+
+.certifications .wrapper .gallery .image.hide {
+  display: none;
+}
+
 .certifications .bigImg {
   position: absolute;
   opacity: 1;
@@ -193,6 +203,15 @@ nav .logo {
 
 .certifications .bigImg .closeButton {
   transform: translate(-10px, 45px);
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  110% {
+    transform: scale(1);
+  }
 }
 
 footer .container p.lead {
@@ -243,10 +262,22 @@ footer .container .goUp:hover {
   }
   .certifications .wrapper nav .items .item {
     padding: 5px 18px;
-    font-size: 10px;
+    font-size: 11px;
+  }
+  .certifications .wrapper .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    width: 100%;
+  }
+  .certifications .wrapper .gallery .image {
+    width: 100%;
+  }
+  .certifications .wrapper .gallery .image img {
+    cursor: pointer;
+    width: 100%;
   }
   .certifications .bigImg {
-    width: 340px;
+    width: 360px;
   }
 }
 
@@ -261,7 +292,7 @@ footer .container .goUp:hover {
     height: 260px;
   }
   .certifications .bigImg {
-    width: 300px;
+    width: 340px;
   }
 }
 

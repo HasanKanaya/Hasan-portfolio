@@ -29,7 +29,7 @@ allText.forEach((e) => {
       allText[1].innerHTML = yAr;
       allText[2].innerHTML = zAr;
       document.querySelector(".allText").style.cssText =
-        "color: #8abee0; line-height: 2;";
+        "color: #a6cfeb; line-height: 2;";
     } else {
       language = "En";
       allText[0].innerHTML = xEn;
@@ -68,18 +68,25 @@ var swiper = new Swiper(".mySwiper", {
 
 // Cer
 
-// let changeImg = document.querySelectorAll(".certifications .mySwiper img");
-// let bigImg = document.querySelector(".certifications .bigImg");
-// changeImg.forEach((e) => {
-//   e.addEventListener("click", () => {
-//     if (bigImg.getAttribute("src") != e.getAttribute("src")) {
-//       $(".bigImg").fadeOut("normal", function () {
-//         bigImg.setAttribute("src", e.getAttribute("src"));
-//       });
-//       $(".bigImg").fadeIn("fast");
-//     }
-//   });
-// });
+let items = document.querySelectorAll(".container .wrapper .items span");
+let allImg = document.querySelectorAll(".container .wrapper .gallery .image");
+items.forEach((e) => {
+  e.addEventListener("click", () => {
+    items.forEach((el) => {
+      el.classList.remove("active");
+    });
+    e.classList.add("active");
+    allImg.forEach((el) => {
+      if (el.getAttribute("data-name") == e.getAttribute("data-name")) {
+        el.classList.remove("hide");
+        el.classList.add("show");
+      } else {
+        el.classList.remove("show");
+        el.classList.add("hide");
+      }
+    });
+  });
+});
 
 let images = document.querySelectorAll(".gallery .image img");
 $(".bigImg").fadeOut("fast");
