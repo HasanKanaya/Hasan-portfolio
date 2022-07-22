@@ -205,6 +205,10 @@ nav .logo {
   transform: translate(-10px, 45px);
 }
 
+.services .iconCustom {
+  font-size: 40px;
+}
+
 @keyframes animate {
   0% {
     transform: scale(0.5);
@@ -212,6 +216,24 @@ nav .logo {
   110% {
     transform: scale(1);
   }
+}
+
+.contactText {
+  letter-spacing: 1.6px;
+  transition: color 0.3s ease;
+  color: crimson;
+}
+
+.contactText:hover {
+  color: darkred;
+}
+
+.contactText a {
+  color: crimson;
+}
+
+.contactText a:hover {
+  color: darkred;
 }
 
 footer .container p.lead {

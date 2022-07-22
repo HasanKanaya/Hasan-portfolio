@@ -14,7 +14,7 @@ let yAr = `بدأت بتعلم البرمجة عندما كان عمري 16 سن
 بعد ذلك قررت تصميم لعبة فتعلمت لغة سي شارب وقمت بتصميم لعبة بسيطة مثل لعبة الأفعى`;
 let yEn = `I started learning programming when I was 16 years old. I learned C++ language as well as the Logical thinking and algorithms
 Then I decided to build mobile applications, so I learned Java and Kotlin and built two applications, the first was to calculate the age and the second to display the time
-After that, I decided to design a game, so I learned C# and build a simple game like the a snake game`;
+After that, I decided to design a game, so I learned C# and build a simple game like a snake game`;
 let zAr = `وعندما بدأت بمجال تصميم المواقع لاحظت انه من أروع المجالات بالعالم لأنه يمكنك بناء اي شيء تريده
 ومنذ ذلك الوقت خصصت وقتي وجهدي لأصبح من أفضل مطوري المواقع في العالم`;
 let zEn = `And when I started into the web Development, I noticed that it is one of the most wonderful careers in the world because you can build anything you want
@@ -103,7 +103,7 @@ images.forEach((ele) => {
 
 // Footer
 let goUpButton = document.querySelector(".goUp");
-
+let dateNow = new Date();
 window.onscroll = function () {
   if (window.scrollY >= 850) {
     goUpButton.style.setProperty("display", "block");
@@ -119,4 +119,5 @@ goUpButton.addEventListener("click", function () {
   });
 });
 
+document.querySelector("span.footerYear").innerHTML = dateNow.getFullYear();
 // Footer
