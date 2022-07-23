@@ -97,8 +97,10 @@ nav .logo {
   text-align: right;
 }
 
-.skills {
-  height: 100vh;
+.skills .custom {
+  border: 7px double crimson;
+  border-color: crimson black;
+  padding: 10px;
 }
 
 .skills .skillsImg {
