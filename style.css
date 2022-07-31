@@ -16,10 +16,6 @@ nav .logo {
   font-size: 1.2em;
 }
 
-.home {
-  height: 90vh;
-}
-
 .home .homeText {
   color: #333;
   font-size: 1.5em;
@@ -105,10 +101,6 @@ nav .logo {
 
 .skills .skillsImg {
   width: 25px;
-}
-
-.works {
-  height: 100vh;
 }
 
 .works .swiper {
